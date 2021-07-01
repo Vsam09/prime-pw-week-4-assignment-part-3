@@ -7,13 +7,13 @@ function addItem( item ){
   'pickles' );
   return true;
 }
-/*console.log(`Basket is ${basket}`);
-console.log('Adding apples (expect true)', addItem('apples'));
-console.log(`Basket is now ${basket}`);*/
-
 function listItems( item ){
   for ( item in basket );
   return basket;
+}
+function empty( item ){
+  for ( item in basket);
+  return basket.length = [];
 }
 console.log( `Items in basket ${basket}` );
 console.log( 'Making burgers for dinner');
@@ -25,3 +25,4 @@ console.log( `Third item is ${basket[ 2 ]}` );
 console.log( `Fourth item is ${basket[ 3 ]}` );
 console.log( `Fifth item is ${basket[ 4 ]}` );
 console.log( `Sixth item is ${basket[ 5 ]}` );
+console.log( `Check out, basket is now empty ${empty()}`)
