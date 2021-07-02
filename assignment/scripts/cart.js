@@ -26,7 +26,20 @@ console.log( `Fourth item is ${basket[ 3 ]}` );
 console.log( `Fifth item is ${basket[ 4 ]}` );
 
 function empty( item ){
-  for ( item of basket);
+  for ( item of basket );
   return basket.length = [];
 }
 console.log( `Check out, basket is now empty ${empty()}`)
+
+//Stretch Goals
+const maxItems = 5;
+
+function isFull(){
+  if (basket.length < maxItems){
+    return false;
+  }
+  else if(basket.length >= maxItems){
+    return true;
+  }
+}
+console.log( 'isFull', isFull() );
