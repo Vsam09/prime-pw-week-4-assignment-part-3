@@ -15,30 +15,30 @@ console.log('Adding watermelon ', addItem('watermelon') );
 console.log('Adding strawberry ', addItem('strawberry') );
 console.log(`Basket now has ${basket}`);
 
-function listItems( item ){
-  for ( item of basket );
-  return basket;
+function listItems( array ){
+  for ( let item of array ){
+    console.log(`List of items: ${basket}`)
+    }
   }
-console.log( 'Listed items are', listItems() );
-console.log( `First item is ${basket[ 0 ]}` );
+  listItems(basket);
+/*console.log( `First item is ${basket[ 0 ]}` );
 console.log( `Second item is ${basket[ 1 ]}` );
 console.log( `Third item is ${basket[ 2 ]}` );
 console.log( `Fourth item is ${basket[ 3 ]}` );
-console.log( `Fifth item is ${basket[ 4 ]}` );
+console.log( `Fifth item is ${basket[ 4 ]}` );*/
 
 function empty( item ){
-  for ( item of basket );
-  return basket.length = [];
+  return basket = [];
   }
 console.log( `Check out, basket is now empty ${empty()}`)
 
 //Stretch Goals
 
 function isFull(){
-  while (basket.length < maxItems){
+  if (basket.length < maxItems){
     return false;
   }
-    if(basket.length >= maxItems){
+  else{
     return true;
   }
 }
