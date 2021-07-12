@@ -17,15 +17,10 @@ console.log(`Basket now has ${basket}`);
 
 function listItems( array ){
   for ( let item of array ){
-    console.log(`List of items: ${basket}`)
-    }
+console.log(`List of items: ${basket}`)
   }
+}
   listItems(basket);
-/*console.log( `First item is ${basket[ 0 ]}` );
-console.log( `Second item is ${basket[ 1 ]}` );
-console.log( `Third item is ${basket[ 2 ]}` );
-console.log( `Fourth item is ${basket[ 3 ]}` );
-console.log( `Fifth item is ${basket[ 4 ]}` );*/
 
 function empty( item ){
   return basket = [];
